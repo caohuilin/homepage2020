@@ -1,4 +1,8 @@
 .content {
+  display: flex;
+  flex: 1;
+}
+.left {
   padding-left: 14.71rem;
   flex: 1;
   display: flex;
@@ -11,23 +15,40 @@
   h1 + h1 {
     margin-top: 2.86rem;
   }
-}
-
-.footer {
-  margin-top: 2.71rem;
-  a {
-    display: inline-block;
-    margin-right: 1.5rem;
-    cursor: pointer;
-    &:last-child {
-      margin-right: 0;
+  .footer {
+    margin-top: 2.71rem;
+    a {
+      display: inline-block;
+      margin-right: 1.5rem;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
 
+.right {
+  padding-right: 14.71rem;
+}
+
+
 @media (max-width: 576px) {
-  .content {
+  .left, .right {
     padding-left: 0;
     text-align: center;
+  }
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width: 784px) {
+  .left, .right {
+    padding-left: 0;
+    text-align: center;
+  }
+  .right {
+    display: none;
   }
 }
