@@ -1,0 +1,58 @@
+@import "../../style/theme.scss";
+
+.switch {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.5rem;
+  margin: 1.625rem 2.16667rem;
+  z-index: 6;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.75rem;
+    transition: 0.4s;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 1.1rem;
+      width: 1.1rem;
+      left: 0.2rem;
+      bottom: 0.2rem;
+      border-radius: 0.55rem;
+      transition: 0.4s;
+      transform: translateX(1rem);
+    }
+  }
+  input:checked + .slider:before {
+    transform: translateX(0rem);
+  }
+  &.dark {
+    .slider {
+      background: $dark-color-text;
+      &:before {
+        background: $dark-color-complement;
+      }
+    }
+  }
+  &.light {
+    .slider {
+      background: $light-color-text;
+      &:before {
+        background: $light-color-complement;
+      }
+    }
+  }
+
+}

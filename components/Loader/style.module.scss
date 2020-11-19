@@ -1,0 +1,52 @@
+.loader {
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: loader-bounce 1.4s ease-in-out 0s infinite both,
+    color-bounce 7s ease infinite;
+}
+.bounce1 {
+  animation-delay: -0.32s;
+}
+.bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes loader-bounce {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes color-bounce {
+    0% {
+      background: #ffa41b;
+    }
+    25% {
+      background: #00ffc8;
+    }
+    50% {
+      background: pink;
+    }
+    75% {
+      background: #05f1ff;
+    }
+    100% {
+      background: #ed143d;
+    }
+  }
