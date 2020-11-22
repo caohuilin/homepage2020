@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "jianfan";
+  src: url("../constants//font/ErZiYuanBuDingJianFan-2.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'jianfan';
+}

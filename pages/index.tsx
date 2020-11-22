@@ -1,16 +1,18 @@
 import Head from "next/head";
 import { useCallback, useState } from "react";
 import classnames from "classnames";
-import Loader from "../components/Loader";
+// import Loader from "../components/Loader";
 import Mouse from "../components/Mouse";
 import ThemeSwitch, { Theme } from "../components/ThemeSwitch";
 import Navigation from "../components/Navigation";
+import MainSection from "../sections/Main";
 
 import style from "./style.module.scss";
 
 export default function Home() {
   const [pos, setPos] = useState<[number, number]>([0, 0]);
   const [theme, setTheme] = useState(Theme.Dark);
+  const [active, setActive] = useState(false);
   const handleMouseOver = useCallback(
     (e) => {
       setPos([e.clientX, e.clientY]);
@@ -31,8 +33,9 @@ export default function Home() {
       </Head>
       <ThemeSwitch theme={theme} setTheme={setTheme}/>
       <Navigation theme={theme} />
-      <Loader />
-      <Mouse theme={theme} pos={pos} />
+      {/* <Loader /> */}
+      <MainSection theme={theme} setMouseActive={setActive}/>
+      <Mouse theme={theme} pos={pos} active={active}/>
     </div>
   );
 }
