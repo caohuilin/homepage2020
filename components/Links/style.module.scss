@@ -1,0 +1,44 @@
+@import "../../style/theme.scss";
+
+.links {
+  position: fixed;
+  top: 0;
+  right: 5rem;
+  height: 1.5rem;
+  margin: 1.625rem 2.16667rem;
+  z-index: 10;
+  &.dark a {
+    color: $dark-color-text;
+    &:after {
+      background: $dark-color-text;
+    }
+  }
+  &.light a {
+    color: $light-color-text;
+    &:after {
+      background: $light-color-text;
+    }
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 4px;
+        bottom: -0.5rem;
+        right: 0;
+        transition: all 0.3s ease;
+      }
+  }
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  a + a {
+      margin-left: 2rem;
+  }
+}
