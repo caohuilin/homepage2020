@@ -1,10 +1,6 @@
-@font-face {
-  font-family: "jianfan";
-  src: url("../constants//font/ErZiYuanBuDingJianFan-2.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-    font-family: 'jianfan';
+  font-family: Courier New, PingFang SC, Verdana, Helvetica Neue,
+    Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei,
+    sans-serif;
+  font-weight: 600;
 }
