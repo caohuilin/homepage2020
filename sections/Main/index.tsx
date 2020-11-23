@@ -1,7 +1,7 @@
-import { useCallback, useEffect, useRef, useState, MouseEvent } from "react";
-import classnames from "classnames";
+import { useCallback, useRef, useState } from "react";
+// import classnames from "classnames";
 import { Theme } from "../../components/ThemeSwitch";
-import { ENavigation } from "../../components/Navigation";
+// import { ENavigation } from "../../components/Navigation";
 import Shape from "./Shape";
 import Text from "./Text";
 
@@ -46,6 +46,8 @@ export default function MainSections(props: IMainSectionsProps) {
       <main>
         <div className={style.content} data-sr-id="1">
           <a
+            href="https://resume.caohuilin.com"
+            target="blank"
             className={style.tilter}
             onMouseOver={handleMouseOver}
             onMouseMove={handleMouseOver}
@@ -73,7 +75,7 @@ export default function MainSections(props: IMainSectionsProps) {
           </a>
         </div>
       </main>
-      <div
+      {/* <div
         className={classnames(style.anchor, {
           [style.dark]: theme === Theme.Dark,
           [style.light]: theme === Theme.Light,
@@ -90,7 +92,7 @@ export default function MainSections(props: IMainSectionsProps) {
         <a href={`#${ENavigation.Education}`} data-sr-id="4">
           教育经历
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

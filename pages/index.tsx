@@ -4,7 +4,7 @@ import classnames from "classnames";
 import Loader from "../components/Loader";
 import Mouse from "../components/Mouse";
 import ThemeSwitch, { Theme } from "../components/ThemeSwitch";
-import Navigation from "../components/Navigation";
+// import Navigation from "../components/Navigation";
 import Links from "../components/Links";
 import MainSection from "../sections/Main";
 
@@ -41,7 +41,7 @@ export default function Home() {
         <>
           <Links theme={theme} />
           <ThemeSwitch theme={theme} setTheme={setTheme} />
-          <Navigation theme={theme} />
+          {/* <Navigation theme={theme} /> */}
           <MainSection theme={theme} setMouseActive={setActive} />
           <Mouse theme={theme} pos={pos} active={active} />
         </>
