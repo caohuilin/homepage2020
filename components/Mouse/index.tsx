@@ -6,14 +6,17 @@ import style from "./style.module.scss";
 interface IMouseProps {
   pos: [number, number];
   theme: Theme;
-  active: boolean
+  active: boolean;
 }
 export default function Mouse(props: IMouseProps) {
   const {
     pos: [x, y],
     theme,
-    active
+    active,
   } = props;
+  if (x === 0 && y === 0) {
+    return null;
+  }
   return (
     <div className={style.follower} style={{ left: `${x}px`, top: `${y}px` }}>
       <span
