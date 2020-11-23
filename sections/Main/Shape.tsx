@@ -7,16 +7,16 @@ export default function Shape() {
       <g
         id="页面-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="shape" transform="translate(45.812309, 0.905119)">
           <g id="编组" transform="translate(0.634040, 0.094881)">
             <rect
               id="矩形"
               fill="#6B0726"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               transform="translate(14.016386, 123.555545) rotate(-16.247600) translate(-14.016386, -123.555545) "
               x="3.36595956"
               y="112.905119"
@@ -27,13 +27,13 @@ export default function Shape() {
               d="M238.453651,86.4 C238.453651,92.8 233.253651,98 226.853651,98 C220.453651,98 215.253651,92.8 215.253651,86.4 C215.253651,80 220.453651,74.8 226.853651,74.8 L226.853651,74.8 L226.853651,74.8 C233.253651,74.8 238.453651,80 238.453651,86.4 Z"
               id="路径"
               fill="#FFC0CB"
-              fill-rule="nonzero"
+              fillRule="nonzero"
             ></path>
             <path
               d="M117.353651,101 C117.353651,105.965517 111.750203,110 104.853651,110 C97.9570991,110 92.3536508,105.965517 92.3536508,101 C92.3536508,96.0344828 97.9570991,92 104.853651,92 L104.853651,92 L104.853651,92 C111.750203,92 117.353651,96.0344828 117.353651,101 Z"
               id="路径"
               fill="#00FFC8"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               transform="translate(104.853651, 101.000000) rotate(-10.000000) translate(-104.853651, -101.000000) "
             ></path>
             <path
@@ -51,7 +51,7 @@ export default function Shape() {
             <rect
               id="矩形"
               fill="#05F1FF"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               x="788.453651"
               y="27.8"
               width="23"
@@ -60,7 +60,7 @@ export default function Shape() {
             <rect
               id="矩形"
               fill="#0597FF"
-              fill-rule="nonzero"
+              fillRule="nonzero"
               transform="translate(456.453651, 70.300000) rotate(90.000000) translate(-456.453651, -70.300000) "
               x="447.953651"
               y="51.3"

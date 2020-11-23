@@ -13,7 +13,7 @@ import style from "./style.module.scss";
 export default function Home() {
   const [loading, setIsLoading] = useState(true);
   const [pos, setPos] = useState<[number, number]>([0, 0]);
-  const [theme, setTheme] = useState(Theme.Dark);
+  const [theme, setTheme] = useState(Theme.Light);
   const [active, setActive] = useState(false);
   const handleMouseOver = useCallback(
     (e) => {
