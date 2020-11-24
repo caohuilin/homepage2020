@@ -32,6 +32,11 @@
         transform: scale(2);
       }
     }
+  }
+}
 
+@media (max-width: 576px) {
+  .follower {
+    display: none;
   }
 }

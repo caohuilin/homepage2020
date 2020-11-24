@@ -7,7 +7,7 @@ export default function Text(props: ITextProps) {
   const { theme } = props;
   const fill = theme === Theme.Dark ? "#ffffff" : "#000000";
   return (
-    <svg width="1119px" height="139px" viewBox="0 0 1119 139" version="1.1">
+    <svg viewBox="0 0 1119 139" version="1.1">
       <title>caohuilin</title>
       <g
         id="页面-1"

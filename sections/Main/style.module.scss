@@ -11,7 +11,7 @@
 }
 .content {
   display: block;
-  width: 1220px;
+  width: 80vw;
   text-align: center;
   margin: 40vh auto 0;
   visibility: visible;
@@ -32,13 +32,13 @@
   width: 100%;
   height: 100%;
   display: block;
-  transition: transform 0.3s ease,
+  transition: transform 0.3s ease;
 }
 .tilterCaption {
   position: absolute;
   bottom: 0;
   width: 100%;
-  transition: transform 0.3s ease,
+  transition: transform 0.3s ease;
 }
 
 .anchor {
@@ -79,5 +79,19 @@
   }
   a + a {
     margin-left: 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    width: 130%;
+    margin: 41vh 0 6vh 14vw;
+    transform: rotate(-90deg);
   }
 }

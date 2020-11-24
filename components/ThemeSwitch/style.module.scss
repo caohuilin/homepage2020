@@ -8,7 +8,7 @@
   width: 2.5rem;
   height: 1.5rem;
   margin: 1.625rem 2.16667rem;
-  z-index: 6;
+  z-index: 11;
   input {
     opacity: 0;
     width: 0;
@@ -54,5 +54,14 @@
       }
     }
   }
+}
 
+@media (max-width: 756px) {
+  .switch {
+    height: 1.3rem;
+    .slider::before {
+      height: 0.9rem;
+      width: 0.9rem;
+    }
+  }
 }
