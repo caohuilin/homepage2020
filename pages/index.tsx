@@ -6,6 +6,7 @@ import Mouse from "../components/Mouse";
 import ThemeSwitch, { Theme } from "../components/ThemeSwitch";
 // import Navigation from "../components/Navigation";
 import Links from "../components/Links";
+import Footer from "../components/Footer";
 import MainSection from "../sections/Main";
 
 import style from "./style.module.scss";
@@ -33,7 +34,7 @@ export default function Home() {
       onMouseMove={handleMouseOver}
     >
       <Head>
-        <title>caohuilin's HomePage</title>
+        <title>曹慧琳的个人网页</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {loading && <Loader />}
@@ -46,6 +47,7 @@ export default function Home() {
           <Mouse theme={theme} pos={pos} active={active} />
         </>
       )}
+      <Footer theme={theme}/>
     </div>
   );
 }
