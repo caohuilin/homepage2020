@@ -14,7 +14,7 @@ export default function Footer(props) {
       <div className={style.content}>
         Copyright © 2024 caohuilin Use.
         <a target="_blank" href="https://beian.miit.gov.cn/">
-          备案号: 晋ICP备2020011596号-1
+          备案号: 沪ICP备2026028037号-1
         </a>
       </div>
     </div>
