@@ -7,7 +7,7 @@ inputs:
     root: ./
     src: ./
     dist: ./out
-    hook: npm run build && npm run export
+    hook: npm run build
     index: index.html
     websitePath: ./
   region: ap-shanghai
